@@ -8,9 +8,10 @@ StormCell integrates [Metrics](http://metrics.codahale.com/) and [Storm](http://
 
 * Clone the source
 * Run `mvn package` in the project directory
-* Copy `target/stormcell-0.2.0.jar` to your storm node (`storm/lib` is a good place)
+* Copy `target/stormcell-0.2.0.jar` to your supervisor nodes
 * Edit `storm.yaml` and add `stormcell-0.2.0.jar` or its containing folder to `java.library.path`
 * Edit `storm.yaml` and add `topology.auto.task.hooks: "org.jodah.stormcell.StormCellTaskHook"`
+* Restart your supervisors
 
 ## Configuration
 
