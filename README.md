@@ -4,6 +4,15 @@
 
 StormCell integrates [Metrics](http://metrics.codahale.com/) and [Storm](http://storm-project.net/), providing a simple web console for your Storm workers.
 
+## Features
+
+HTTP routes available for each worker process:
+
+* `/metrics`: Prints all metrics for the VM. Supports `?pretty=true`.
+* `/healthcheck`: Runs all registered healthchecks for the VM. Supports `?pretty=true`.
+* `/threads`: Dumps all threads in the VM.
+* `/ping`: Prints "pong" if the process is alive.
+
 ## Setup
 
 * Clone the source
